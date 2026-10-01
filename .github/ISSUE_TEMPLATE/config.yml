@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ReplAI documentation
+    url: https://replai.kg/docs/
+    about: Read setup instructions and integration guidance.
+  - name: Product and integration help
+    url: https://replai.kg/en/
+    about: Explore ReplAI or contact support@replai.kg for product and account-specific questions.

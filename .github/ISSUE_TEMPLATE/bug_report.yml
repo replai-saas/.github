@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible problem with existing behavior.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the issue in the affected repository. Use sanitized examples and keep credentials, customer data, and account-specific details out of public issues.
+  - type: input
+    id: component
+    attributes:
+      label: Affected component
+      placeholder: API, widget, dashboard, integration, or documentation
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happens, and how does it affect the user or caller?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should happen in the same situation?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest repeatable example, including relevant input.
+      placeholder: |
+        1. Start with...
+        2. Perform...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Include the version or commit and relevant browser, operating system, runtime, or integration version.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and verification
+      description: Add sanitized logs, screenshots, measurements, or an existing failing check. Note whether the issue happens consistently.

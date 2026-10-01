@@ -1,0 +1,47 @@
+name: Technical task
+description: Plan maintenance, migration, or other engineering work.
+title: "[Task] "
+labels: [maintenance]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Define a concrete outcome and a way to verify it. Keep private implementation details in the appropriate private repository.
+  - type: input
+    id: component
+    attributes:
+      label: Affected component
+      placeholder: Component, module, or integration
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Current state and reason for the work
+      description: Explain the problem, evidence, or constraint motivating this task.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and intended outcome
+      description: Describe what will change and any boundaries needed to keep the task focused.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Acceptance and validation
+      description: List observable completion criteria and meaningful checks or measurements. For larger work, identify stages that can be verified and committed separately.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Contracts, data, and rollout
+      description: If applicable, describe affected APIs or events, migrations, backfills, recovery, and deployment ordering.
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and related work
+      description: Link related issues or coordinated changes and describe anything that must happen first.

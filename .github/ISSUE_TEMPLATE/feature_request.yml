@@ -1,0 +1,47 @@
+name: Feature request
+description: Propose a capability or improvement to user or caller behavior.
+title: "[Feature] "
+labels: [feature]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Focus on the problem and desired outcome. Keep examples suitable for the repository's visibility.
+  - type: input
+    id: component
+    attributes:
+      label: Affected component
+      placeholder: API, widget, dashboard, integration, or documentation
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Who needs this, and what is difficult with the current behavior?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: Proposed behavior
+      description: Describe the desired result with a concrete example.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance and validation
+      description: How will we know the feature works? Include observable behavior and important failure cases.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or current workaround
+      description: Describe other approaches you have considered, if any.
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Contract or data impact
+      description: If known, note affected APIs, events, consumers, stored data, or migrations. Leave implementation details open when undecided.
